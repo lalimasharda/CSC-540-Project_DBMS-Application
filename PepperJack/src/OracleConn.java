@@ -10,6 +10,7 @@ public class OracleConn {
     
 	public static Connection getConnection() throws SQLException {
 		return DriverManager.getConnection(JDBCURL, USER, PASSWORD);
+		//System.out.println("Connected");
 	}
 	public static void processException(SQLException e) {
 		System.err.println("Error Message: " +e.getMessage());
